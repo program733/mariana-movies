@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies@Mariana Tek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movies@Mariana Tek</h1>
+        <div class="filter-options">
+            <div class="genre-dropdown">
+                <span class="genre-label">Genre:</span>
+                <select id="genre">
+                    <option value="all" selected>All</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                </select>
+            </div>
+            <div class="search-input">
+                <label for="search">Search by Title:</label>
+                <input type="text" id="search">
+            </div>
+        </div>
+        <table id="movie-table">
+            <thead>
+                <tr>
+                    <th>Poster</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Rating</th>
+                    <th>Year</th>
+                    <th>Metacritic Rating</th>
+                    <th>Runtime</th>
+                </tr>
+            </thead>
+            <tbody id="movie-list"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
